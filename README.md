@@ -6,9 +6,9 @@ Every client on the server is identified with a specific username. It has been m
 
 For this Threading in python has been used so that the server can handle multiple clients at the same time.
 
-Gapshape demo-
 
 
+![Chat Application Demo](./assets/demo.gif)
 
 
 
@@ -94,6 +94,7 @@ Follow these steps to get the application running on your local machine:-
 • Start the client: In your second terminal, run the GUI client: ```bash python clientgui.py ```.
    Now, simply enter a username in the application    
    Window to log in and start chatting!
+
 
 
 
