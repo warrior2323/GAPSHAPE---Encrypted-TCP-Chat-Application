@@ -90,11 +90,12 @@ Follow these steps to get the application running on your local machine:-
 
 • You will need two separate terminals open.
         Start the server: In your first terminal, run the
-        following command: ‘python server.py ‘
+        following command: ``` bash python server.py ```.
  
 • Start the client: In your second terminal, run the GUI client: ```bash python clientgui.py ```.
    Now, simply enter a username in the application    
    Window to log in and start chatting!
+
 
 
 
