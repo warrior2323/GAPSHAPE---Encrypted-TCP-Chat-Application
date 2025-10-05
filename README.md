@@ -4,7 +4,7 @@ This is a secure chat application with a full-featured and intuitive Graphical U
 
 Every client on the server is identified with a specific username. It has been made with the help of TCP Sockets in python. This application works on a CLIENT-SERVER Model in which multiple clients can connect to the server and can create a multi-client chat room where everyone can talk at once 🤝. Clients also can join chat rooms based on a specific topic so that they can find similar interested people there.
 
-    For this Threading in python has been used so that the server can handle multiple clients at the same time.
+For this Threading in python has been used so that the server can handle multiple clients at the same time.
 
 Gapshape demo-
 
@@ -94,6 +94,7 @@ Follow these steps to get the application running on your local machine:-
 • Start the client: In your second terminal, run the GUI client: ```bash python clientgui.py ```.
    Now, simply enter a username in the application    
    Window to log in and start chatting!
+
 
 
 
