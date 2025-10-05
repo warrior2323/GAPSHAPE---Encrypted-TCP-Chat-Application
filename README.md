@@ -68,6 +68,7 @@ Message Decryption: Arpit uses the newly recovered AES Session Key to quickly de
    This ensures the plaintext message and the secret AES key are only ever exposed to Vinamra and Arpit. The server becomes completely blind to the content of the messages being sent. The server only sees the ciphertext.
 All the conversations are also being stored in 'messglog.json file' with proper username and timestamps with the room in which the conversations were taking place. It also stores the time at which the user connected or disconnected the server which also tells us which clients joined the server.
 
+![chat application demo](./Assets/chat.png)
 
 
    ##Builtwith-
@@ -94,6 +95,7 @@ Follow these steps to get the application running on your local machine:-
 • Start the client: In your second terminal, run the GUI client: ```bash python clientgui.py ```.
    Now, simply enter a username in the application    
    Window to log in and start chatting!
+
 
 
 
