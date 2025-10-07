@@ -92,11 +92,10 @@ Follow these steps to get the application running on your local machine:-
         Start the server: In your first terminal, run the
         following command: ``` bash python server.py ```.
  
-• Start the client: In your second terminal, run the GUI client: ```bash python clientgui.py ```.
-   Now, simply enter a username in the application    
-   Window to log in and start chatting!
-
-
+• Start the client : If you want to experience Gapshape with GUI ,then for the client file, Run - ```bash clientgui.py ```.
+                     If you want to experience Gapshape without GUI, then for the client file , Run - ```bash client.py ```.
+                       -- Now, simply enter a username in the application    
+                                                                     Window to log in and start chatting!
 
 
 
