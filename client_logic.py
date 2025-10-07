@@ -13,17 +13,17 @@ class Client:
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.callbacks = callbacks
         
-        # --- Your Cryptography Setup ---
+
         (self.public_key, self.private_key) = rsa.newkeys(2048)
         self.public_key_pem = self.public_key.save_pkcs1().decode('utf-8')
         self.PUBLIC_KEYS_CACHE = {}
         self.SESSION_KEYS = {}
 
     def connect(self, server_ip, port, username): 
-        """Connects to the server, sends credentials, and starts listening for messages."""
+
         try:
             self.client.connect((server_ip, port))
-            self.client.recv(2048) # Clear the initial "Enter username" prompt from the server
+            self.client.recv(2048) 
             
             self._send(username)
             self._send(self.public_key_pem)
@@ -37,7 +37,7 @@ class Client:
             return False
 
     def _send(self, msg):
-        """Internal method to encode and send a message with a header."""
+
         try:
             message = msg.encode(FORMAT)
             msg_length = len(message)
@@ -49,7 +49,7 @@ class Client:
             self.callbacks.get('on_disconnected', lambda: None)()
 
     def _listen_for_messages(self):
-        """Runs in a background thread to handle all incoming messages."""
+
         while True:
             try:
                 msg_length_str = self.client.recv(HEADER).decode(FORMAT)
@@ -58,7 +58,7 @@ class Client:
                 msg_length = int(msg_length_str.strip())
                 msg = self.client.recv(msg_length).decode(FORMAT)
                 
-                # --- Your Message Parsing Logic ---
+
                 parts = msg.split(' ', 2)
                 command = parts[0]
 
@@ -101,11 +101,11 @@ class Client:
         self.callbacks.get('on_disconnected', lambda: None)()
 
     def send_public_message(self, msg):
-        """Sends a regular, public message."""
+
         self._send(msg)
 
     def send_private_message(self, recipient, message):
-        """Handles the full logic for sending an encrypted private message."""
+
         if recipient not in self.SESSION_KEYS:
             if recipient not in self.PUBLIC_KEYS_CACHE:
                 self.callbacks.get('on_system_message', lambda m: None)(f"[INFO] Public key for '{recipient}' not cached. Requesting from server...")
@@ -126,5 +126,6 @@ class Client:
         self._send(f"/privatemsg {recipient} MESSAGE {encrypted_message.hex()}")
 
     def disconnect(self):
-        """Sends the disconnect message to the server."""
+
+
         self._send(DISCONNECT_MESSAGE)
