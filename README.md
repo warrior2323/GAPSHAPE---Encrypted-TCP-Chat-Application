@@ -1,8 +1,8 @@
 ﻿#Gapshape - Encrypted TCP Chat Application
     
-This is a secure chat application with a full-featured and intuitive Graphical User Interface! built with the help of thinter. It is based on the principle of Hybrid cryptography to establish a secure connection between the 2 clients on the server.
+This is a secure chat application with a full-featured and intuitive Graphical User Interface! built with the help of tkinter. It is based on the principle of Hybrid cryptography to establish a secure connection between the 2 clients on the server.
 
-Every client on the server is identified with a specific username. It has been made with the help of TCP Sockets in python. This application works on a CLIENT-SERVER Model in which multiple clients can connect to the server and can create a multi-client chat room where everyone can talk at once 🤝. Clients also can join chat rooms based on a specific topic so that they can find similar interested people there.
+Every client on the server is identified with a specific username. It has been made with the help of TCP Sockets in python. This application works on a CLIENT-SERVER Model in which multiple clients can connect to the server and can create a multi-client chat room where everyone can talk at once 🤝. Clients can also join chat rooms based on a specific topic so that they can find similar interested people there.
 
 For this Threading in python has been used so that the server can handle multiple clients at the same time.
 
@@ -26,7 +26,7 @@ For this Threading in python has been used so that the server can handle multipl
 
 * ⏱️Accurate time stamps for messages on both the server as well as the client side.
 
-* 📄 Message logging in 'messageslog.json' file.
+* 📄 Message logging in 'messglog.json' file.
 
 * 🔒 end-to-end encrypted private messaging.
 
@@ -38,11 +38,11 @@ For this Threading in python has been used so that the server can handle multipl
 
 Available Commands-
   
-  * /privatemsg <recipent> <msg> - Undisclosed messaging service             for those who want to talk privately.
+  * /privatemsg <recipent> <msg> - Undisclosed messaging service for those who want to talk privately.
   * /list - To see the active users on the room and see their real time status.
   * /manual - to open the manual
   * /status <status_name>- to change your status
-  * /knowrooms - to know the rooms in which the other clients      are in real time.
+  * /knowrooms - to know the rooms in which the other clients are in real time.
   * /quit - to disconnect from the server.
 
   ##Security model
@@ -87,7 +87,7 @@ Without GUI demo
 
 Follow these steps to get the application running on your local machine:-
 
-• Clone the repository: git clone [https://github.com/your-username/your-repo-name.git]
+• Clone the repository: git clone [https://github.com/warrior2323/GAPSHAPE---Encrypted-TCP-Chat-Application.git]
 
 •  **Install the required packages: ** ```bash pip install -r requirements.txt ``` 
 
@@ -99,8 +99,8 @@ Follow these steps to get the application running on your local machine:-
  
 • Start the client : If you want to experience Gapshape with GUI ,then for the client file, Run - ```bash clientgui.py ```.
                      If you want to experience Gapshape without GUI, then for the client file , Run - ```bash client.py ```.
-                       -- Now, simply enter a username in the application    
-                                                                     Window to log in and start chatting!
+                       -- Now, simply enter a username in the application Window to log in and start chatting!
+
 
 
 
