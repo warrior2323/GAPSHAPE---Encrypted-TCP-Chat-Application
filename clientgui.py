@@ -15,7 +15,7 @@ class ChatGUI:
         self.splash_screen.title("Loading....",)
         self.splash_screen.geometry("300x200")
         self.splash_screen.overrideredirect(True)        
-        self.photo1=tkinter.PhotoImage(file="cpp/CGS DOUBT/Gemini_Generated_Image_krfeq7krfeq7krfe.png")
+        self.photo1=tkinter.PhotoImage(file="Gemini_Generated_Image_krfeq7krfeq7krfe.png")
         Label=tkinter.Label(self.splash_screen,image=self.photo1)
         Label.pack()
         
@@ -134,5 +134,6 @@ if __name__ == "__main__":
     root = tkinter.Tk()
     app = ChatGUI(root)
     root.mainloop()
+
 
 
