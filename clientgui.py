@@ -57,7 +57,7 @@ class ChatGUI:
         self.chat_area.tag_configure('my_message', justify='right', background="#D0E7BF", rmargin=10)
         self.chat_area.tag_configure('their_message', justify='left', background="#BBC1F1", lmargin1=5, lmargin2=5)
         self.chat_area.tag_configure('system', foreground='blue', justify='center', font=("Helvetica", 9, "italic"))
-        self.chat_area.tag_configure('private', foreground='#343434', background='#FFFACD', lmargin1=5, lmargin2=5) # Yellow for private
+        self.chat_area.tag_configure('private', foreground='#343434', background='#FFFACD', lmargin1=5, lmargin2=5) 
 
         input_frame = tkinter.Frame(self.master)
         input_frame.pack(fill=tkinter.X, padx=10, pady=5)
@@ -133,6 +133,6 @@ class ChatGUI:
 if __name__ == "__main__":
     root = tkinter.Tk()
     app = ChatGUI(root)
-    root.mainloop()#That line, if __name__ == "__main__":, is a standard and very important convention in Python. It's the designated starting point for a script.
+    root.mainloop()
 
-#In simple terms, the code inside this if block will only run when you execute this file directly from the terminal (e.g., python gui.py). It will not run if this file is imported as a module into another Python script.
+
