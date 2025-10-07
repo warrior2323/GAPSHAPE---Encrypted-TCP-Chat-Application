@@ -75,7 +75,9 @@ All the conversations are also being stored in 'messglog.json file' with proper 
 
        * Python
        * Tkinter
-       * PyCryptodome
+       * cryptography
+       * rsa
+       * datetime
        * Socket
        * Threading 
 Without GUI demo       
@@ -99,6 +101,7 @@ Follow these steps to get the application running on your local machine:-
                      If you want to experience Gapshape without GUI, then for the client file , Run - ```bash client.py ```.
                        -- Now, simply enter a username in the application    
                                                                      Window to log in and start chatting!
+
 
 
 
